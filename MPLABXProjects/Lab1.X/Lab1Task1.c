@@ -1,7 +1,7 @@
 #include <p32xxxx.h>
 #include <xc.h>
 #include <stdint.h>
-
+//armen and mickey
 void msDelay(uint32_t count) {
     volatile uint32_t i;
     for (i = 0; i < count * 1000; i++) {
@@ -17,16 +17,13 @@ uint32_t bitmap[5]={
 };
 int main(void){
     TRISD=0x0000;
-
     while (1){
         for(int i =0; i<5; i++){
             LATD = bitmap[i];
             msDelay (1000);
             
             LATD=0x0000;
-            
-        }
-   
+                    }
     }
     return 0;
 }
