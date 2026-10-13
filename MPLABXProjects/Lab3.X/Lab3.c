@@ -13,7 +13,7 @@ void msDelay(unsigned msec);
 // Value assigned to each key of the top row (columns C1..C4)
 const int topRowKeys[4] = {1, 2, 3, 10};
 
-void main(void)
+int main(void)
 {
     int keyNum;
 
